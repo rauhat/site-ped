@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СҒЗЖ Тесті - Қорытынды</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="result-card">
+            <div class="result-header">
+                <div class="icon result-icon" id="resultIcon">🎓</div>
+                <h1>Қорытынды</h1>
+                <p class="result-message" id="resultMessage"></p>
+            </div>
+
+            <div class="score-display">
+                <div class="score-circle">
+                    <svg width="200" height="200" viewBox="0 0 200 200">
+                        <circle cx="100" cy="100" r="90" fill="none" stroke="#e0e0e0" stroke-width="12"/>
+                        <circle id="scoreCircle" cx="100" cy="100" r="90" fill="none" stroke="#4CAF50" stroke-width="12" 
+                                stroke-dasharray="565.48" stroke-dashoffset="565.48" transform="rotate(-90 100 100)" 
+                                style="transition: stroke-dashoffset 1s ease"/>
+                    </svg>
+                    <div class="score-text">
+                        <span class="score-number" id="scoreNumber">0</span>
+                        <span class="score-total">/ 10</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-stats">
+                <div class="stat-item correct">
+                    <div class="stat-icon">✓</div>
+                    <div class="stat-label">Дұрыс</div>
+                    <div class="stat-value" id="correctCount">0</div>
+                </div>
+                <div class="stat-item incorrect">
+                    <div class="stat-icon">✗</div>
+                    <div class="stat-label">Қате</div>
+                    <div class="stat-value" id="incorrectCount">0</div>
+                </div>
+                <div class="stat-item percentage">
+                    <div class="stat-icon">%</div>
+                    <div class="stat-label">Пайыз</div>
+                    <div class="stat-value" id="percentageValue">0%</div>
+                </div>
+            </div>
+
+            <div class="detailed-results" id="detailedResults">
+                <!-- Detailed answers will be shown here -->
+            </div>
+
+            <div class="result-actions">
+                <button class="action-btn restart-btn" onclick="restartTest()">Қайта бастау</button>
+                <button class="action-btn home-btn" onclick="goHome()">Басты бетке</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

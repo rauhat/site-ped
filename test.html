@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СҒЗЖ Тесті - Сұрақтар</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="test-card">
+            <div class="progress-header">
+                <div class="progress-info">
+                    <span class="question-counter">Сұрақ <span id="currentQuestion">1</span> / <span id="totalQuestions">10</span></span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+
+            <div class="question-container" id="questionContainer">
+                <!-- Questions will be loaded here by JavaScript -->
+            </div>
+
+            <div class="navigation-buttons">
+                <button class="nav-btn prev-btn" id="prevBtn" onclick="previousQuestion()" disabled>← Артқа</button>
+                <button class="nav-btn next-btn" id="nextBtn" onclick="nextQuestion()">Келесі →</button>
+                <button class="nav-btn submit-btn" id="submitBtn" onclick="submitTest()" style="display: none;">Аяқтау ✓</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
